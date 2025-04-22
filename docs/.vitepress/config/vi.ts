@@ -82,7 +82,71 @@ export const vi = defineConfig({
           { text: 'Tài trợ', link: '/vi/support' }
         ]
       },
-      // Thêm các mục sidebar khác tương tự như các ngôn ngữ khác
+      {
+        text: 'Chi tiết',
+        items: [
+          { 
+            text: 'Cài đặt Liên quan đến HOOK',
+            collapsed: false,
+            items: [
+              { text: 'Cài đặt HOOK', link: '/vi/hooksettings' },
+              { text: 'Dịch Nhúng', link: '/vi/embedtranslate' },
+              { text: 'Hỗ trợ Game Giả lập', link: '/vi/emugames' },
+            ]
+          },
+          {
+            text: 'Cài đặt Liên quan đến OCR',
+            collapsed: false,
+            items: [
+              { text: 'Cấu hình OCR', link: '/vi/ocrparam' },
+              { text: 'Sử dụng OCR Hiệu quả', link: '/vi/gooduseocr' },
+            ]
+          },
+          {
+            text: 'Cài đặt giao diện dịch thuật',
+            collapsed: false,
+            items: [
+              { text: 'Cài đặt Giao diện', link: '/vi/traninterface1' },
+              { text: 'Hiệu ứng Văn bản', link: '/vi/traninterface2' },
+              { text: 'Lịch sử Dịch thuật', link: '/vi/traninterface3' },
+            ]
+          },
+          {
+            text: 'Xử lý Văn bản & Tối ưu Dịch thuật',
+            collapsed: false,
+            items: [
+              { text: 'Xử lý Văn bản', link: '/vi/textprocess' },
+            ]
+          },
+          {
+            text: 'Phân đoạn & Từ điển',
+            collapsed: false,
+            items: [
+              { text: 'Từ điển', link: '/vi/dict' },
+            ]
+          },
+          { text: 'Tổng hợp Giọng nói', link: '/vi/speechsynthesis' },
+          { text: 'Nút Công cụ', link: '/vi/alltoolbuttons' },
+          { text: 'Phím tắt', link: '/vi/fastkeys' },
+          {
+            text: 'Dịch vụ Mạng',
+            collapsed: false,
+            items: [
+              { text: 'Dịch vụ API', link: '/vi/apiservice' },
+              { text: 'API OCR', link: '/vi/useapis/ocrapi' },
+              { text: 'API Dịch thuật', link: '/vi/useapis/tsapi' },
+              { text: 'Model Nội địa Trung Quốc', link: '/vi/guochandamoxing' },
+            ]
+          }
+        ]
+      },
+      {
+        text: 'FAQ',
+        items: [
+          { text: 'FAQ - Game', link: '/vi/qa1' },
+          { text: 'FAQ - HOOK/OCR', link: '/vi/qa2' },
+        ]
+      }
     ]
   }
 })
